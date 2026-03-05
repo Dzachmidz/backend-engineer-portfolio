@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📬 Sistem Informasi Surat Menyurat
+# 📤 Letter Management Information System
 
 ### _A production-grade correspondence management system built for real-world organizational operations._
 
@@ -17,7 +17,7 @@
 
 ## 📌 Overview
 
-> **Sistem Informasi Surat Menyurat** is a full-featured, production-ready **Correspondence Management System (CMS)** designed for Indonesian government and organizational environments.
+> **Letter Management Information System** is a full-featured, production-ready **Correspondence Management System (CMS)** designed for Indonesian government and organizational environments.
 
 This system solves the inefficiency of manual letter management by digitalizing the entire correspondence lifecycle — from incoming and outgoing letters to internal office memos and bulk correspondence. It was designed and deployed for use in real organizational workflows, replacing paper-based processes with a centralized, trackable, and auditable digital system.
 
@@ -28,32 +28,32 @@ Built on **CodeIgniter 3** with a clean MVC architecture, it features session-ba
 ## ✨ Features
 
 - 🔐 **Session-Based Authentication** — Secure login/logout with MD5-hashed passwords, brute-force flash messaging, and email-based password reset
-- 📥 **Surat Masuk (Incoming Mail)** — Record, track, and archive all incoming correspondence with full CRUD and detail views
-- 📤 **Surat Keluar (Outgoing Mail)** — Manage and generate outgoing letters with auto-incremented letter numbers
-- 📋 **Nota Dinas (Office Memo)** — Create and manage internal service notes with automated nota number generation
-- 📦 **Surat Masuk Massal (Bulk Incoming Mail)** — Handle and categorize mass/bulk incoming correspondence as a separate workflow
+- 📥 **Incoming Mail (Surat Masuk)** — Record, track, and archive all incoming correspondence with full CRUD and detail views
+- 📤 **Outgoing Mail (Surat Keluar)** — Manage and generate outgoing letters with auto-incremented letter numbers
+- 📋 **Office Memo (Nota Dinas)** — Create and manage internal service notes with automated nota number generation
+- 📦 **Bulk Incoming Mail (Surat Masuk Massal)** — Handle and categorize mass/bulk incoming correspondence as a separate workflow
 - 🗂️ **Kode Arsip Classification** — Standard government archive classification codes (e.g., `000/001/NND/2024`) for systematic document filing
 - 🔢 **Auto-Numbering Engine** — Dynamic letter number generation via AJAX based on recipient unit, archive code, and year
-- 📎 **File Attachment Support** — Upload and manage supporting documents (lampiran) linked to correspondence records
+- 📎 **File Attachment Support** — Upload and manage supporting documents linked to correspondence records
 - 📊 **Reporting & Print Module** — Generate and print filtered correspondence reports (by date range, unit, letter type)
 - 👥 **User Management** — Admin-controlled user accounts with profile management and last-login tracking
-- 🏢 **Departmental Structure** — Manage organizational units (Bagian) and their relationships
+- 🏢 **Departmental Structure** — Manage organizational units (departments) and their relationships
 - 📧 **Email Notification System** — SMTP-based email for account verification and password reset via Gmail
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology | Purpose |
-|---|---|---|
-| **Backend** | PHP 7.x + CodeIgniter 3 | MVC core logic, ORM-style Active Record, routing |
-| **Database** | MySQL / MariaDB | Relational data persistence |
-| **Frontend** | Bootstrap + jQuery | Responsive UI, AJAX interactions |
-| **Authentication** | PHP Session + MD5 | User session management and credential handling |
-| **Email** | PHPMailer / CI Email via SMTP | Account verification & password reset |
-| **Storage** | Local filesystem | File attachment (lampiran) handling |
-| **Infrastructure** | Apache / Nginx + Linux | Web server deployment |
-| **Dev Tools** | Git, phpMyAdmin | Version control & database management |
+| Layer              | Technology                    | Purpose                                          |
+| ------------------ | ----------------------------- | ------------------------------------------------ |
+| **Backend**        | PHP 7.x + CodeIgniter 3       | MVC core logic, ORM-style Active Record, routing |
+| **Database**       | MySQL / MariaDB               | Relational data persistence                      |
+| **Frontend**       | Bootstrap + jQuery            | Responsive UI, AJAX interactions                 |
+| **Authentication** | PHP Session + MD5             | User session management and credential handling  |
+| **Email**          | PHPMailer / CI Email via SMTP | Account verification & password reset            |
+| **Storage**        | Local filesystem              | File attachment handling                         |
+| **Infrastructure** | Apache / Nginx + Linux        | Web server deployment                            |
+| **Dev Tools**      | Git, phpMyAdmin               | Version control & database management            |
 
 ---
 
@@ -88,31 +88,31 @@ The project follows the standard **CodeIgniter MVC (Model–View–Controller)**
 
 ### Key Modules
 
-| Module | Controller | Responsibility |
-|---|---|---|
-| **Authentication** | `Web.php` | Login, logout, password reset via email token |
+| Module             | Controller            | Responsibility                                      |
+| ------------------ | --------------------- | --------------------------------------------------- |
+| **Authentication** | `Web.php`             | Login, logout, password reset via email token       |
 | **Correspondence** | `SuratController.php` | SM, SK, Nota Dinas, Nota Dinas CRUD, auto-numbering |
-| **Administration** | `Users.php` | Dashboard, user management, settings, reports |
-| **Data Layer** | `Mcrud.php` | Centralized Active Record model for all tables |
+| **Administration** | `Users.php`           | Dashboard, user management, settings, reports       |
+| **Data Layer**     | `Mcrud.php`           | Centralized Active Record model for all tables      |
 
 ### Database Structure
 
 The system manages **12+ relational tables** including:
 
-| Table | Description |
-|---|---|
-| `tbl_user` | User accounts, credentials, profiles, and login history |
-| `tbl_sm` | Surat Masuk (Incoming Mail) records |
-| `tbl_sk` | Surat Keluar (Outgoing Mail) records |
-| `tbl_ns` | Nota Dinas / internal office memandums |
-| `tbl_surmas` | Surat Masuk Massal (Bulk incoming correspondence) |
-| `tbl_memo` | Internal memo records |
-| `tbl_bagian` | Organizational department/division data |
-| `kode_arsip` | Standard government archive classification codes |
-| `unit_kerja` | Work unit / organizational unit registry |
-| `nota_dinas` | Extended nota dinas with stored procedure support |
-| `kab_kota` | Regional reference data (District/City) |
-| `kecamatan` / `kelurahan` | Sub-district and village reference data |
+| Table                     | Description                                             |
+| ------------------------- | ------------------------------------------------------- |
+| `tbl_user`                | User accounts, credentials, profiles, and login history |
+| `tbl_sm`                  | Incoming Mail (Surat Masuk) records                     |
+| `tbl_sk`                  | Outgoing Mail (Surat Keluar) records                    |
+| `tbl_ns`                  | Office Memo (Nota Dinas) / internal memorandums         |
+| `tbl_surmas`              | Bulk Incoming Mail (Surat Masuk Massal) records         |
+| `tbl_memo`                | Internal memo records                                   |
+| `tbl_bagian`              | Organizational department/division data                 |
+| `kode_arsip`              | Standard government archive classification codes        |
+| `unit_kerja`              | Work unit / organizational unit registry                |
+| `nota_dinas`              | Extended office memo with stored procedure support      |
+| `kab_kota`                | Regional reference data (District/City)                 |
+| `kecamatan` / `kelurahan` | Sub-district and village reference data                 |
 
 ---
 
@@ -153,14 +153,14 @@ The system manages **12+ relational tables** including:
 
 <div align="center">
 
-| | |
-|:---:|:---:|
-| **Login Page** | **Dashboard / Beranda** |
-| ![Login](screenshots/login.png) | ![Dashboard](screenshots/dashboard.png) |
-| **Surat Masuk List** | **Surat Keluar Form** |
-| ![SM List](screenshots/sm_list.png) | ![SK Form](screenshots/sk_form.png) |
-| **Laporan (Report)** | **User Management** |
-| ![Report](screenshots/laporan.png) | ![Users](screenshots/users.png) |
+|                                         |                                     |
+| :-------------------------------------: | :---------------------------------: |
+|          **Dashboard / Home**           |           **Login Page**            |
+| ![Dashboard](screenshots/dashboard.png) |   ![Login](screenshots/login.png)   |
+|         **Incoming Mail List**          |       **Outgoing Mail Form**        |
+|   ![SM List](screenshots/sm_list.png)   | ![SK Form](screenshots/sk_form.png) |
+|               **Report**                |         **User Management**         |
+|   ![Report](screenshots/laporan.png)    |   ![Users](screenshots/users.png)   |
 
 </div>
 
@@ -198,16 +198,16 @@ Please contact me for access.
 
 ## 📊 Project at a Glance
 
-| Metric | Value |
-|---|---|
-| **Backend Framework** | CodeIgniter 3 (PHP) |
-| **Controllers** | 3 (Web, Users, SuratController) |
-| **Database Tables** | 12+ |
-| **Correspondence Types** | 4 (SM, SK, Nota Dinas, Surmas, Memo) |
-| **Report Views** | 6 (SM, SK, Surmas — list & print) |
-| **Archive Classification Codes** | 100+ (national standard) |
-| **Authentication Mechanism** | Session-based with email token reset |
-| **Supported Regions (Reference)** | 38 Kab/Kota (East Java) |
+| Metric                            | Value                                |
+| --------------------------------- | ------------------------------------ |
+| **Backend Framework**             | CodeIgniter 3 (PHP)                  |
+| **Controllers**                   | 3 (Web, Users, SuratController)      |
+| **Database Tables**               | 12+                                  |
+| **Correspondence Types**          | 4 (SM, SK, Nota Dinas, Surmas, Memo) |
+| **Report Views**                  | 6 (SM, SK, Surmas — list & print)    |
+| **Archive Classification Codes**  | 100+ (national standard)             |
+| **Authentication Mechanism**      | Session-based with email token reset |
+| **Supported Regions (Reference)** | 38 Kab/Kota (East Java)              |
 
 ---
 

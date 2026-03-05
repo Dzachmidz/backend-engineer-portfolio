@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏕️ Sistem Informasi Kepramukaan
+# 🏕️ Scouting Information System
 
 ### _A production-grade CMS & information portal for a district-level Scouting organization._
 
@@ -17,7 +17,7 @@
 
 ## 📌 Overview
 
-> **Sistem Informasi Kepramukaan** is a full-stack web portal and Content Management System built for a district-level Scouting (_Kepramukaan_) organization in Indonesia.
+> **Scouting Information System** is a full-stack web portal and Content Management System built for a district-level Scouting (_Kepramukaan_) organization in Indonesia.
 
 The system was designed to solve a real operational problem: the organization needed a centralized, easily managed digital presence to publish news, announce events, manage multimedia content, and engage the public — all without relying on a technical team for day-to-day updates.
 

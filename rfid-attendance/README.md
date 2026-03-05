@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📋 Sistem Informasi Absensi Al Wafa
+# 📋 Al Wafa Attendance Information System
 
 ### _A production-grade, IoT-integrated automated attendance management system built with Django._
 
@@ -18,28 +18,28 @@
 
 ## 📌 Overview
 
-**Sistem Informasi Absensi Al Wafa** adalah sistem manajemen absensi berbasis RFID yang dirancang untuk lingkungan pendidikan nyata. Sistem ini menggantikan proses pencatatan kehadiran manual dengan solusi digital otomatis menggunakan kartu RFID yang terintegrasi langsung dengan hardware scanner (IoT device).
+**Al Wafa Attendance Information System** is an RFID-based attendance management system designed for a real educational environment. It replaces manual attendance recording with an automated digital solution using RFID cards directly integrated with a hardware scanner (IoT device).
 
-Sistem ini dibangun dengan arsitektur **monolitik modular** menggunakan Django, mengekspos **REST API** untuk komunikasi dengan perangkat keras RFID, dan menyediakan **panel admin berbasis web** yang kaya fitur untuk pengelolaan data siswa, kelas, jadwal, dan laporan kehadiran.
+The system is built on a **modular monolithic** architecture using Django, exposing a **REST API** for communication with RFID hardware, and providing a feature-rich **web-based admin panel** for managing student data, classes, schedules, and attendance reports.
 
-> Sistem ini telah digunakan secara aktif di lingkungan institusi pendidikan **Al Wafa**, mengelola data kehadiran siswa secara real-time setiap hari.
+> This system is actively deployed at the **Al Wafa** educational institution, managing real-time student attendance data every day.
 
 ---
 
 ## ✨ Features
 
-- 🔐 **Autentikasi Admin** — Login/logout aman berbasis session Django, seluruh halaman admin dilindungi `@login_required`
-- 📡 **Integrasi Hardware RFID** — REST API endpoint khusus untuk menerima scan UID dari perangkat RFID (ESP32/Arduino)
-- ⏱️ **Deteksi Status Otomatis** — Sistem secara cerdas menentukan status kehadiran: **Hadir**, **Terlambat**, atau **Telat Jemput** berdasarkan jam scan
-- 🔄 **Multi-Sesi per Kelas** — Setiap kelas dapat memiliki beberapa sesi jadwal (Pagi/Sore), dengan toleransi waktu masuk/pulang yang dapat dikonfigurasi
-- 📊 **Dashboard Real-Time** — Menampilkan total siswa, jumlah hadir hari ini, jumlah belum hadir, dan aktivitas absensi terbaru
-- 👤 **Manajemen Siswa Lengkap** — CRUD siswa, import massal via file Excel, dan edit data individual
-- 🏫 **Manajemen Kelas & Jadwal** — Kelola kelas beserta jadwal masuk & pulang per kelas, termasuk sesi jadwal khusus
-- 🪪 **Registrasi Kartu RFID** — Daftarkan UID kartu RFID ke data siswa, dengan fitur pengecekan status kartu (sudah terdaftar / tersedia)
-- ✍️ **Absensi Manual** — Entri absensi diluar RFID oleh admin untuk kondisi darurat
-- 📜 **Riwayat Absensi** — Tabel histori lengkap seluruh data kehadiran dengan filter dan pagination
-- 📤 **Export ke Excel** — Unduh laporan absensi dalam format `.xlsx` menggunakan `openpyxl`
-- ⚙️ **Pengaturan Waktu Global** — Konfigurasi jam operasional global sistem dengan pola Singleton
+- 🔐 **Admin Authentication** — Secure session-based login/logout; all admin pages protected by `@login_required`
+- 📡 **RFID Hardware Integration** — Dedicated REST API endpoint for receiving UID scans from RFID devices (ESP32/Arduino)
+- ⏱️ **Automatic Status Detection** — The system intelligently determines attendance status: **Present**, **Late**, or **Late Pickup** based on scan time
+- 🔄 **Multi-Session per Class** — Each class can have multiple schedule sessions (Morning/Afternoon) with configurable check-in/check-out time tolerances
+- 📊 **Real-Time Dashboard** — Displays total students, today's attendance count, absent count, and recent attendance activity
+- 👤 **Complete Student Management** — Student CRUD, bulk import via Excel file, and individual data editing
+- 🏫 **Class & Schedule Management** — Manage classes with check-in & check-out schedules per class, including special schedule sessions
+- 🪪 **RFID Card Registration** — Register RFID card UIDs to student records, with card status checking (registered / available)
+- ✍️ **Manual Attendance** — Admin entry of attendance outside of RFID for emergency situations
+- 📜 **Attendance History** — Complete history table of all attendance data with filtering and pagination
+- 📤 **Export to Excel** — Download attendance reports in `.xlsx` format using `openpyxl`
+- ⚙️ **Global Time Settings** — Configure global system operating hours using a Singleton pattern
 
 ---
 
@@ -48,19 +48,19 @@ Sistem ini dibangun dengan arsitektur **monolitik modular** menggunakan Django, 
 | Layer               | Technology                     | Purpose                                      |
 | ------------------- | ------------------------------ | -------------------------------------------- |
 | **Backend**         | Django 4.x (Python 3.x)        | Core logic, ORM, routing, template rendering |
-| **REST API**        | Django REST Framework          | Endpoint komunikasi hardware RFID            |
-| **Database**        | SQLite (dev) / MySQL (prod)    | Penyimpanan data relasional                  |
-| **Frontend**        | Bootstrap 5 + Django Templates | UI responsif & server-side rendering         |
-| **IoT Integration** | ESP32 / Arduino (RFID Reader)  | Hardware scanner kartu RFID                  |
-| **Export/Import**   | openpyxl                       | Generate & parse file Excel (.xlsx)          |
-| **Authentication**  | Django Session Auth            | Keamanan panel admin                         |
+| **REST API**        | Django REST Framework          | RFID hardware communication endpoint         |
+| **Database**        | SQLite (dev) / MySQL (prod)    | Relational data storage                      |
+| **Frontend**        | Bootstrap 5 + Django Templates | Responsive UI & server-side rendering        |
+| **IoT Integration** | ESP32 / Arduino (RFID Reader)  | RFID card hardware scanner                   |
+| **Export/Import**   | openpyxl                       | Generate & parse Excel files (.xlsx)         |
+| **Authentication**  | Django Session Auth            | Admin panel security                         |
 | **Tools**           | Git, Virtualenv, Postman       | Version control & development tooling        |
 
 ---
 
 ## 🏗️ Architecture
 
-Sistem ini menggunakan arsitektur **Django MTV (Model-Template-View)** dengan dua modul aplikasi utama yang terpisah secara bertanggung jawab:
+The system uses a **Django MTV (Model-Template-View)** architecture with two main application modules with clearly separated responsibilities:
 
 ```
 ┌────────────────────────────────────────────┐
@@ -75,17 +75,17 @@ Sistem ini menggunakan arsitektur **Django MTV (Model-Template-View)** dengan du
 ┌──────────▼──────────┐  ┌─────▼─────────────┐
 │  adminapp (Web UI)  │  │  userapp (REST API)│
 │  - Dashboard        │  │  - /api/rfid-scan/ │
-│  - Data Siswa/Kelas │  │  - Serializers     │
-│  - Riwayat Absensi  │  │  - Absensi Logic   │
-│  - RFID Registrasi  │  └─────┬─────────────┘
-│  - Absensi Manual   │        │ POST UID
+│  - Student/Class    │  │  - Serializers     │
+│  - Attendance Log   │  │  - Attend. Logic   │
+│  - RFID Register    │  └─────┬─────────────┘
+│  - Manual Attend.   │        │ POST UID
 └──────────┬──────────┘  ┌─────▼────────────┐
            │              │  RFID Hardware   │
 ┌──────────▼──────────────┤  (ESP32/Arduino) │
 │      Data Models        └──────────────────┘
-│  Siswa | Kelas | Absensi                   │
-│  JadwalSesi | RfidLog                      │
-│  WaktuOperasional (Singleton)              │
+│  Student | Class | Attendance              │
+│  ScheduleSession | RfidLog                 │
+│  OperationalTime (Singleton)               │
 └──────────┬─────────────────────────────────┘
            │ SQL / ORM
 ┌──────────▼─────────────────────────────────┐
@@ -93,85 +93,85 @@ Sistem ini menggunakan arsitektur **Django MTV (Model-Template-View)** dengan du
 └────────────────────────────────────────────┘
 ```
 
-### Modul Utama:
+### Main Modules:
 
-- **`userapp`** — Mengelola model data inti (`Siswa`, `Kelas`, `Absensi`, `JadwalSesi`, `RfidLog`, `WaktuOperasional`), REST API untuk hardware RFID, dan logika absensi otomatis.
-- **`adminapp`** — Mengelola seluruh tampilan web admin: dashboard, manajemen data, registrasi RFID, riwayat absensi, dan fitur ekspor/impor data.
+- **`userapp`** — Manages core data models (`Student`, `Class`, `Attendance`, `ScheduleSession`, `RfidLog`, `OperationalTime`), REST API for RFID hardware, and automated attendance logic.
+- **`adminapp`** — Manages all web admin views: dashboard, data management, RFID registration, attendance history, and export/import features.
 
-### Mekanisme Absensi Otomatis:
+### Automated Attendance Mechanism:
 
-1. Hardware RFID mengirim `POST /api/rfid-scan/` dengan payload `{"uid": "XXXX"}`
-2. Sistem mencari `Siswa` berdasarkan UID kartu
-3. Jika ditemukan, sistem menentukan **mode absensi** (`masuk` / `pulang`) berdasarkan:
-   - Ada/tidaknya record `Absensi` terbuka (jam_keluar null) hari ini
-   - Jadwal waktu dari sesi kelas yang relevan
-4. Status kehadiran dihitung otomatis: `Tepat Waktu` atau `Terlambat`
-5. Response JSON dikirim kembali ke hardware (nama siswa, mode, pesan)
+1. RFID hardware sends `POST /api/rfid-scan/` with payload `{"uid": "XXXX"}`
+2. The system looks up the `Student` by card UID
+3. If found, the system determines the **attendance mode** (`check-in` / `check-out`) based on:
+   - Whether an open `Attendance` record (checkout_time null) exists for today
+   - Schedule time from the relevant class session
+4. Attendance status is automatically calculated: `On Time` or `Late`
+5. JSON response is sent back to the hardware (student name, mode, message)
 
 ---
 
 ## 🔄 System Workflow
 
-### Alur Absensi Masuk (Check-In)
+### Check-In Flow
 
 ```
-[Tap Kartu RFID]
+[Tap RFID Card]
       │
       ▼
 [Hardware POST → /api/rfid-scan/]
       │
       ▼
-[Cari Siswa by RFID UID]
+[Look Up Student by RFID UID]
       │
-      ├── Tidak Ditemukan → Log RfidLog (status: unknown) → Response Error
+      ├── Not Found → Log RfidLog (status: unknown) → Response Error
       │
-      └── Ditemukan
+      └── Found
               │
               ▼
-      [Ambil Jadwal Kelas / Sesi Aktif]
+      [Fetch Class Schedule / Active Session]
               │
               ▼
-      [Hitung Status: Tepat Waktu / Terlambat]
+      [Calculate Status: On Time / Late]
               │
               ▼
-      [Simpan record Absensi ke Database]
+      [Save Attendance record to Database]
               │
               ▼
-      [Response: "Selamat Datang, {Nama}"]
+      [Response: "Welcome, {Name}"]
 ```
 
-### Alur Absensi Pulang (Check-Out)
+### Check-Out Flow
 
 ```
-[Tap Kartu RFID ke-2]
+[Tap RFID Card (2nd time)]
       │
       ▼
-[Sistem deteksi ada open_absensi hari ini (jam_keluar = null)]
+[System detects open attendance today (checkout_time = null)]
       │
       ▼
-[Cek waktu saat ini >= jadwal_pulang_mulai]
+[Check current time >= scheduled checkout start]
       │
-      ├── Belum Waktunya → Response: "Anda sudah absen masuk pukul HH:MM"
+      ├── Not Yet Time → Response: "You already checked in at HH:MM"
       │
-      └── Sudah Waktunya
+      └── Time Met
               │
               ▼
-      [Update jam_keluar pada record Absensi]
+      [Update checkout_time on Attendance record]
               │
               ▼
-      [Response: "Selamat Jalan, {Nama}"]
+      [Response: "Goodbye, {Name}"]
 ```
 
-### Alur Admin Panel
+### Admin Panel Flow
 
 ```
 1. Admin login → /login/ (session-based auth)
-2. Dashboard → Lihat ringkasan hadir/tidak hadir hari ini
-3. Kelola Kelas → Tambah/edit kelas + konfigurasi jadwal sesi
-4. Kelola Siswa → CRUD + import Excel massal
-5. Registrasi RFID → Daftarkan/cek kartu ke siswa
-6. Absensi Manual → Input absensi tanpa RFID
-7. Riwayat Absensi → Filter & export laporan ke Excel
+2. Dashboard → View today's present/absent summary
+3. Manage Classes → Add/edit classes + configure schedule sessions
+4. Manage Students → CRUD + bulk Excel import
+5. RFID Registration → Register/check cards to students
+6. Manual Attendance → Input attendance without RFID
+7. Attendance History → Filter & export reports to Excel
 ```
 
 ---
@@ -182,27 +182,27 @@ Sistem ini menggunakan arsitektur **Django MTV (Model-Template-View)** dengan du
 
 |                                         |                                           |
 | :-------------------------------------: | :---------------------------------------: |
-|           **Admin Dashboard**           |              **Data Siswa**               |
+|           **Admin Dashboard**           |             **Student Data**              |
 | ![Dashboard](screenshots/dashboard.png) |  ![Students](screenshots/data_siswa.png)  |
-|           **Riwayat Absensi**           |            **Registrasi RFID**            |
+|         **Attendance History**          |           **RFID Registration**           |
 |   ![History](screenshots/riwayat.png)   | ![RFID](screenshots/registrasi_rfid.png)  |
-|           **Manajemen Kelas**           |            **Absensi Manual**             |
+|          **Class Management**           |           **Manual Attendance**           |
 |  ![Class](screenshots/data_kelas.png)   | ![Manual](screenshots/absensi_manual.png) |
 
 </div>
 
-> _Placeholder — jalankan sistem untuk melihat tampilan langsung._
+> _Placeholder — run the system to see the live interface._
 
 ---
 
 ## 🌍 Project Impact
 
-- ✅ **Digunakan di institusi pendidikan nyata** — Sistem beroperasi aktif di **Al Wafa** untuk mencatat kehadiran siswa setiap hari
-- ✅ **Mengeliminasi absensi manual** — Menggantikan pencatatan dengan kertas yang rawan kesalahan & manipulasi
-- ✅ **Integrasi IoT** — Menghubungkan hardware RFID fisik langsung ke database digital melalui REST API
-- ✅ **Efisiensi administrasi** — Admin dapat mengekspor laporan kehadiran ke Excel dalam hitungan detik
-- ✅ **Deteksi real-time** — Status kehadiran (tepat waktu/terlambat) dihitung otomatis tanpa intervensi admin
-- ✅ **Skalabilitas data** — Arsitektur mendukung penambahan kelas, sesi jadwal, dan siswa baru tanpa down-time
+- ✅ **Deployed at a real educational institution** — The system operates actively at **Al Wafa** to record student attendance every day
+- ✅ **Eliminates manual attendance** — Replaces error-prone and manipulation-susceptible paper-based recording
+- ✅ **IoT Integration** — Connects physical RFID hardware directly to a digital database via REST API
+- ✅ **Administrative efficiency** — Admins can export attendance reports to Excel in seconds
+- ✅ **Real-time detection** — Attendance status (on time/late) is automatically calculated without admin intervention
+- ✅ **Data scalability** — Architecture supports adding new classes, schedule sessions, and students without downtime
 
 ---
 
@@ -225,16 +225,16 @@ Please contact me for access.
 
 ## 📊 Project at a Glance
 
-| Metric               | Value                                                             |
-| -------------------- | ----------------------------------------------------------------- |
-| **Backend Modules**  | 2 (`adminapp`, `userapp`)                                         |
-| **Database Models**  | 6 (Siswa, Kelas, Absensi, JadwalSesi, RfidLog, WaktuOperasional)  |
-| **API Endpoints**    | 1 REST + 9 Admin Routes                                           |
-| **Admin Features**   | Dashboard, Students, Classes, Sessions, RFID Reg, Manual, History |
-| **IoT Integration**  | RFID Card Reader (ESP32/Arduino over HTTP)                        |
-| **Export Format**    | Excel (.xlsx) via openpyxl                                        |
-| **Authentication**   | Django Session-based (Admin Panel)                                |
-| **Deployment Ready** | Gunicorn + Nginx (Linux Server)                                   |
+| Metric               | Value                                                                     |
+| -------------------- | ------------------------------------------------------------------------- |
+| **Backend Modules**  | 2 (`adminapp`, `userapp`)                                                 |
+| **Database Models**  | 6 (Student, Class, Attendance, ScheduleSession, RfidLog, OperationalTime) |
+| **API Endpoints**    | 1 REST + 9 Admin Routes                                                   |
+| **Admin Features**   | Dashboard, Students, Classes, Sessions, RFID Reg, Manual, History         |
+| **IoT Integration**  | RFID Card Reader (ESP32/Arduino over HTTP)                                |
+| **Export Format**    | Excel (.xlsx) via openpyxl                                                |
+| **Authentication**   | Django Session-based (Admin Panel)                                        |
+| **Deployment Ready** | Gunicorn + Nginx (Linux Server)                                           |
 
 ---
 

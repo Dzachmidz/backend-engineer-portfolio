@@ -15,7 +15,7 @@
 
 ---
 
-## � Source Code
+## 🔒 Source Code
 
 This is a real-world production project.  
 The source code is kept in a **private repository** to protect intellectual property.
@@ -29,7 +29,7 @@ However, I’m happy to provide access to:
 
 ---
 
-## �📌 Overview
+## 📌 Overview
 
 > **Django Portfolio** is not just a static website—it's a **Content Management System (CMS)** designed for developers to showcase their work professionally.
 

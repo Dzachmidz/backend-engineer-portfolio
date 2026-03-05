@@ -69,17 +69,17 @@ The project follows a **Modular Monolith** architecture to ensure maintainabilit
 └───────────┬────────────┘
             │ HTTP Request
 ┌───────────▼────────────┐
-│      Django URLs       │  Routes to apps (skor, pendaftaran, etc)
+│      Django URLs       │  Routes to apps (score, registration, etc)
 └───────────┬────────────┘
             │
 ┌───────────▼────────────┐    ┌─────────────────┐
 │       App Views        │◄───┤    Templates    │
-│ (Skor, Medali, Wasit)  │    │  (HTML + BS5)   │
+│ (Score, Medal, Referee)│    │  (HTML + BS5)   │
 └───────────┬────────────┘    └─────────────────┘
             │ Query
 ┌───────────▼────────────┐
 │      Data Models       │
-│ (Peserta, Nilai, Club) │
+│ (Participant, Score, Club) │
 └───────────┬────────────┘
             │ SQL
 ┌───────────▼────────────┐
@@ -178,12 +178,12 @@ The project follows a **Modular Monolith** architecture to ensure maintainabilit
 
 ## 📊 Project at a Glance
 
-| Metric              | Value                                             |
-| ------------------- | ------------------------------------------------- |
-| **Modules**         | 7+ (Skor, Pendaftaran, Medali, Wasit, User, etc.) |
-| **Database Tables** | 25+                                               |
-| **API Endpoints**   | 50+                                               |
-| **Users Supported** | Scalable to Thousands                             |
+| Metric              | Value                                                |
+| ------------------- | ---------------------------------------------------- |
+| **Modules**         | 7+ (Score, Registration, Medal, Referee, User, etc.) |
+| **Database Tables** | 25+                                                  |
+| **API Endpoints**   | 50+                                                  |
+| **Users Supported** | Scalable to Thousands                                |
 
 ---
 
