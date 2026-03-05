@@ -16,6 +16,20 @@
 
 ---
 
+## 🔒 Source Code
+
+This is a real-world production project used in massive regional events.  
+The source code is kept in a **private repository** to protect intellectual property.
+
+However, I’m happy to provide access to:
+
+- 👨‍💻 **Interviewers** – to review code quality and architecture
+- 🤝 **Collaborators** – if you're interested in contributing
+
+[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
+
+---
+
 ## 📌 Overview
 
 **Al Wafa Attendance Information System** is an RFID-based attendance management system designed for a real educational environment. It replaces manual attendance recording with an automated digital solution using RFID cards directly integrated with a hardware scanner (IoT device).

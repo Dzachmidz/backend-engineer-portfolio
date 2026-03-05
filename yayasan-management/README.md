@@ -15,6 +15,20 @@
 
 ---
 
+## 🔒 Source Code
+
+This is a real-world production project used in massive regional events.  
+The source code is kept in a **private repository** to protect intellectual property.
+
+However, I’m happy to provide access to:
+
+- 👨‍💻 **Interviewers** – to review code quality and architecture
+- 🤝 **Collaborators** – if you're interested in contributing
+
+[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
+
+---
+
 ## 🚀 Overview
 
 **Hifdzul Wafa Management System (HWSPP)** is a comprehensive backend solution designed to digitize and automate critical school administration processes. It bridges the gap between academic management and financial tracking, providing a unified platform for administrators, students, and parents.
