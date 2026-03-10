@@ -1,14 +1,15 @@
 <div align="center">
 
-# 🏅 Porprov 2025: Integrated Sports Event Management System
+# 🏅 GYMNASTIC SCORING SYSTEM: Integrated Sports Event Management System
 
-### _A production-grade, real-time management system designed for large-scale regional sports competitions._
+### _A production grade, real time management system designed for large scale regional sports competitions._
 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Django](https://img.shields.io/badge/Django-5.2-092E20?style=for-the-badge&logo=django&logoColor=white)](https://djangoproject.com)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
 [![MySQL](https://img.shields.io/badge/MySQL-Production-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
 [![Status](https://img.shields.io/badge/Status-Production-success?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)]()
 
 </div>
 
@@ -16,7 +17,7 @@
 
 ## 🔒 Source Code
 
-This is a real-world production project used in massive regional events.  
+This is a real world production project used in massive regional events.  
 The source code is kept in a **private repository** to protect intellectual property.
 
 However, I’m happy to provide access to:
@@ -30,16 +31,16 @@ However, I’m happy to provide access to:
 
 ## 📌 Overview
 
-> **Porprov 2025** is a comprehensive backend solution engineered to manage the entire lifecycle of the _Pekan Olahraga Provinsi_ (Provincial Sports Week).
+> **Gimnastik Scoring System** is a comprehensive backend solution engineered to manage the entire lifecycle of large scale gymnastics and sports competitions — from regional club events to provincial-level championships.
 
-It solves complex logistical challenges by digitizing participant registration, document verification, live scoring, referee management, and medal tallying. Designed for high-reliability **real-world production usage**, this system eliminates manual paper trails, ensures data integrity during live events, and provides instantaneous results to officials and the public.
+It solves complex logistical challenges by digitizing participant registration, document verification, live scoring, referee management, and medal tallying across **multiple events**. Designed for high-reliability **real-world production usage**, this system eliminates manual paper trails, ensures data integrity during live events, and provides instantaneous results to officials and the public.
 
 ---
 
 ## ✨ Features
 
 - 📝 **Registration & Verification** — Secure portal for clubs to register athletes with automated age categorization and document upload (ID, BPJS, KK).
-- ⚡ **Live Scoring Engine** — Real-time score entry and processing with sub-second latency for public displays.
+- ⚡ **Live Scoring Engine** — Real time score entry and processing with sub second latency for public displays.
 - 🥇 **Automated Medal Tally** — Dynamic calculation of medal standings globally and by category.
 - 👮 **Referee Management** — Digital assignment and tracking system for match officials.
 - 📄 **Document Generation** — Automated PDF creation for certificates, ID cards, and official reports.
@@ -117,13 +118,11 @@ The project follows a **Modular Monolith** architecture to ensure maintainabilit
 |                                         |                                     |
 | :-------------------------------------: | :---------------------------------: |
 |              **Dashboard**              |       **Live Scoring Board**        |
-| ![Dashboard](screenshots/dashboard.png) | ![Scoring](screenshots/scoring.png) |
+| ![Dashboard](/image/gimnastik-scoring-system/dashboard.png) | ![Scoring](/image/gimnastik-scoring-system/liveskor.png) |
 |      **Participant Verification**       |           **Medal Tally**           |
-| ![Verification](screenshots/verify.png) |  ![Medal](screenshots/medali.png)   |
+| ![Verification](/image/gimnastik-scoring-system/verification.png) |  ![Medal](/image/gimnastik-scoring-system/medals.png)   |
 
 </div>
-
-> _Note: Placeholders for screenshots. Contact for a live demo._
 
 ---
 
@@ -140,8 +139,8 @@ The project follows a **Modular Monolith** architecture to ensure maintainabilit
 1.  **Clone the repository** (If granted access)
 
     ```bash
-    git clone https://github.com/yourusername/porprov25.git
-    cd porprov25
+    git clone https://github.com/Dzachmidz/gymnastics-scoring-system.git
+    cd gymnastics-scoring-system
     ```
 
 2.  **Create virtual environment**
@@ -203,17 +202,13 @@ The project follows a **Modular Monolith** architecture to ensure maintainabilit
 <div align="center">
 
 **Achmad Fahmi Al Hafidz**
-_Backend Engineer · Python · Django_
+_Backend Engineer · Python · Django · Fullstack Web_
 
-[![GitHub](https://img.shields.io/badge/GitHub-Visit-181717?style=for-the-badge&logo=github)](https://github.com/fidzst)
+[![GitHub](https://img.shields.io/badge/GitHub-dzachmidz-181717?style=for-the-badge&logo=github)](https://github.com/Dzachmidz)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fidzst)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fidzst.pythonanywhere.com)
 
 </div>
 
 ---
-
-<div align="center">
-
-_Built with ❤️ using Django & Python._
-
-</div>

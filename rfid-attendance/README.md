@@ -2,7 +2,7 @@
 
 # 📋 Al Wafa Attendance Information System
 
-### _A production-grade, IoT-integrated automated attendance management system built with Django._
+### _A production-grade, IoT integrated automated attendance management system built with Django._
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Django](https://img.shields.io/badge/Django-4.x-092E20?style=for-the-badge&logo=django&logoColor=white)](https://djangoproject.com)
@@ -18,7 +18,7 @@
 
 ## 🔒 Source Code
 
-This is a real-world production project used in massive regional events.  
+This is a production grade IoT integrated attendance system actively deployed at a real educational institution.  
 The source code is kept in a **private repository** to protect intellectual property.
 
 However, I’m happy to provide access to:
@@ -32,9 +32,9 @@ However, I’m happy to provide access to:
 
 ## 📌 Overview
 
-**Al Wafa Attendance Information System** is an RFID-based attendance management system designed for a real educational environment. It replaces manual attendance recording with an automated digital solution using RFID cards directly integrated with a hardware scanner (IoT device).
+**Al Wafa Attendance Information System** is an RFID based attendance management system designed for a real educational environment. It replaces manual attendance recording with an automated digital solution using RFID cards directly integrated with a hardware scanner (IoT device).
 
-The system is built on a **modular monolithic** architecture using Django, exposing a **REST API** for communication with RFID hardware, and providing a feature-rich **web-based admin panel** for managing student data, classes, schedules, and attendance reports.
+The system is built on a **modular monolithic** architecture using Django, exposing a **REST API** for communication with RFID hardware, and providing a feature rich **web-based admin panel** for managing student data, classes, schedules, and attendance reports.
 
 > This system is actively deployed at the **Al Wafa** educational institution, managing real-time student attendance data every day.
 
@@ -42,13 +42,13 @@ The system is built on a **modular monolithic** architecture using Django, expos
 
 ## ✨ Features
 
-- 🔐 **Admin Authentication** — Secure session-based login/logout; all admin pages protected by `@login_required`
+- 🔐 **Admin Authentication** — Secure session based login/logout; all admin pages protected by `@login_required`
 - 📡 **RFID Hardware Integration** — Dedicated REST API endpoint for receiving UID scans from RFID devices (ESP32/Arduino)
 - ⏱️ **Automatic Status Detection** — The system intelligently determines attendance status: **Present**, **Late**, or **Late Pickup** based on scan time
 - 🔄 **Multi-Session per Class** — Each class can have multiple schedule sessions (Morning/Afternoon) with configurable check-in/check-out time tolerances
 - 📊 **Real-Time Dashboard** — Displays total students, today's attendance count, absent count, and recent attendance activity
 - 👤 **Complete Student Management** — Student CRUD, bulk import via Excel file, and individual data editing
-- 🏫 **Class & Schedule Management** — Manage classes with check-in & check-out schedules per class, including special schedule sessions
+- 🏫 **Class & Schedule Management** — Manage classes with check in & check out schedules per class, including special schedule sessions
 - 🪪 **RFID Card Registration** — Register RFID card UIDs to student records, with card status checking (registered / available)
 - ✍️ **Manual Attendance** — Admin entry of attendance outside of RFID for emergency situations
 - 📜 **Attendance History** — Complete history table of all attendance data with filtering and pagination
@@ -74,7 +74,7 @@ The system is built on a **modular monolithic** architecture using Django, expos
 
 ## 🏗️ Architecture
 
-The system uses a **Django MTV (Model-Template-View)** architecture with two main application modules with clearly separated responsibilities:
+The system uses a **Django MTV (Model Template View)** architecture with two main application modules with clearly separated responsibilities:
 
 ```
 ┌────────────────────────────────────────────┐
@@ -196,23 +196,19 @@ The system uses a **Django MTV (Model-Template-View)** architecture with two mai
 
 |                                         |                                           |
 | :-------------------------------------: | :---------------------------------------: |
-|           **Admin Dashboard**           |             **Student Data**              |
-| ![Dashboard](screenshots/dashboard.png) |  ![Students](screenshots/data_siswa.png)  |
+|           **Admin Dashboard**           |             **Class Management**             |
+| ![Dashboard](/image/rfid-attendance/dashboard.png)  | ![Class](/image/rfid-attendance/class.png) 
 |         **Attendance History**          |           **RFID Registration**           |
-|   ![History](screenshots/riwayat.png)   | ![RFID](screenshots/registrasi_rfid.png)  |
-|          **Class Management**           |           **Manual Attendance**           |
-|  ![Class](screenshots/data_kelas.png)   | ![Manual](screenshots/absensi_manual.png) |
+|   ![History](/image/rfid-attendance/history.png)   | ![RFID](/image/rfid-attendance/rfid.png)  |
 
 </div>
-
-> _Placeholder — run the system to see the live interface._
 
 ---
 
 ## 🌍 Project Impact
 
 - ✅ **Deployed at a real educational institution** — The system operates actively at **Al Wafa** to record student attendance every day
-- ✅ **Eliminates manual attendance** — Replaces error-prone and manipulation-susceptible paper-based recording
+- ✅ **Eliminates manual attendance** — Replaces error prone and manipulation susceptible paper based recording
 - ✅ **IoT Integration** — Connects physical RFID hardware directly to a digital database via REST API
 - ✅ **Administrative efficiency** — Admins can export attendance reports to Excel in seconds
 - ✅ **Real-time detection** — Attendance status (on time/late) is automatically calculated without admin intervention
@@ -220,24 +216,7 @@ The system uses a **Django MTV (Model-Template-View)** architecture with two mai
 
 ---
 
-## 🔒 Source Code
-
-This is a production-grade system used in a real educational environment.
-
-The full source code is hosted in a **private repository** to protect intellectual property.
-
-However, I'm happy to provide access to:
-
-- 👨‍💻 **Interviewers** — for code quality & architecture review
-- 🤝 **Collaborators** — if you're interested in contributing
-
-Please contact me for access.
-
-[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
-
----
-
-## 📊 Project at a Glance
+## Project at a Glance
 
 | Metric               | Value                                                                     |
 | -------------------- | ------------------------------------------------------------------------- |
@@ -342,17 +321,11 @@ Configure your ESP32/Arduino to send `POST` requests to this endpoint when a car
 **Achmad Fahmi Al Hafidz**
 _Backend Engineer · Python · Django · IoT Systems_
 
-[![GitHub](https://img.shields.io/badge/GitHub-fidzst-181717?style=for-the-badge&logo=github)](https://github.com/fidzst)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-dzachmidz-181717?style=for-the-badge&logo=github)](https://github.com/Dzachmidz)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fidzst)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://your-portfolio.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fidzst.pythonanywhere.com)
 
 </div>
 
 ---
-
-<div align="center">
-
-_Built with ❤️ using Django & Python — deployed in a real educational institution._
-
-</div>

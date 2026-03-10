@@ -2,13 +2,13 @@
 
 # 🏕️ Scouting Information System
 
-### _A production-grade CMS & information portal for a district-level Scouting organization._
+### _A previously deployed, production grade CMS & information portal for a district level Scouting organization._
 
 [![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
 [![CodeIgniter](https://img.shields.io/badge/CodeIgniter-3.x-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)](https://codeigniter.com)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-3/4-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
-[![Status](https://img.shields.io/badge/Status-Production-success?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Archived-lightgray?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)]()
 
 </div>
@@ -17,7 +17,7 @@
 
 ## 🔒 Source Code
 
-This is a real-world production project used in massive regional events.  
+This was a production grade CMS & information portal previously deployed for a real district level Scouting organization.  
 The source code is kept in a **private repository** to protect intellectual property.
 
 However, I’m happy to provide access to:
@@ -31,30 +31,30 @@ However, I’m happy to provide access to:
 
 ## 📌 Overview
 
-> **Scouting Information System** is a full-stack web portal and Content Management System built for a district-level Scouting (_Kepramukaan_) organization in Indonesia.
+> **Scouting Information System** is a fullstack web portal and Content Management System built for a district level Scouting (_Kepramukaan_) organization in Indonesia.
 
-The system was designed to solve a real operational problem: the organization needed a centralized, easily managed digital presence to publish news, announce events, manage multimedia content, and engage the public — all without relying on a technical team for day-to-day updates.
+The system was designed to solve a real operational problem: the organization needed a centralized, easily managed digital presence to publish news, announce events, manage multimedia content, and engage the public — all without relying on a technical team for day to day updates.
 
-Built on **CodeIgniter 3 (PHP MVC framework)** and deployed in a live government/organization environment, the platform handles everything from public-facing content delivery to a secure, role-based back-office management panel.
+Built on **CodeIgniter 3 (PHP MVC framework)** and previously deployed in a live government/organization environment, the platform handled everything from public-facing content delivery to a secure, role-based back office management panel.
 
 ---
 
 ## ✨ Features
 
-- 🔐 **Secure Authentication System** — Session-based login with CAPTCHA verification and `password_hash` encryption for admin access
-- 🗞️ **News & Article Management** — Full CRUD for news articles with categories, tags, SEO-friendly slugs, and comment moderation
+- 🔐 **Secure Authentication System** — Session based login with CAPTCHA verification and `password_hash` encryption for admin access
+- 🗞️ **News & Article Management** — Full CRUD for news articles with categories, tags, SEO friendly slugs, and comment moderation
 - 📅 **Event & Agenda Module** — Create, publish, and display upcoming events linked to registered users
 - 🖼️ **Multimedia Management** — Dedicated modules for photo albums, video playlists, image galleries, and banner sliders
 - 📂 **File Download Center** — Upload and serve downloadable files (documents, forms, resources) to the public
-- 📊 **Polling / Survey System** — Built-in public polling with answer tracking and result display
-- 📢 **Announcement Board** — Quick-publish announcements displayed on the homepage
-- 🧩 **Dynamic Menu Builder** — Configure multi-level navigation menus from the admin panel
+- 📊 **Polling / Survey System** — Built in public polling with answer tracking and result display
+- 📢 **Announcement Board** — Quick publish announcements displayed on the homepage
+- 🧩 **Dynamic Menu Builder** — Configure multi level navigation menus from the admin panel
 - 🎨 **Template & Appearance Settings** — Switch between website templates and customize headers, logos, and backgrounds
 - 📬 **Contact Form** — Public inquiry form with data storage and admin review
 - 📈 **Visitor Statistics** — Basic hit counter and visit statistics per page/article
-- 👤 **Role-Based User Management** — Multi-level admin roles (`admin`, `operator`) with per-module access control (`users_modul`)
-- 🛡️ **Profanity Filter** — Automated bad-word filtering for public comments and form submissions
-- 📰 **RSS Feed** — Auto-generated RSS feed for news syndication
+- 👤 **Role-Based User Management** — Multi-level admin roles (`admin`, `operator`) with per module access control (`users_modul`)
+- 🛡️ **Profanity Filter** — Automated bad word filtering for public comments and form submissions
+- 📰 **RSS Feed** — Auto generated RSS feed for news syndication
 
 ---
 
@@ -161,47 +161,26 @@ The application follows a clean **MVC (Model-View-Controller)** architecture enf
 |                                           |                                     |
 | :---------------------------------------: | :---------------------------------: |
 |       **Homepage / Public Portal**        |       **News Article Detail**       |
-|   ![Homepage](screenshots/homepage.png)   | ![Article](screenshots/article.png) |
+|   ![Homepage](/image/scout-system/dashboard.png)   | ![Article](/image/scout-system/article.png) |
 |            **Admin Dashboard**            |    **Content Management Panel**     |
-| ![Admin](screenshots/admin-dashboard.png) |  ![CMS](screenshots/cms-panel.png)  |
-|          **Multimedia Gallery**           |      **Event / Agenda Module**      |
-|    ![Gallery](screenshots/gallery.png)    |  ![Agenda](screenshots/agenda.png)  |
+| ![Admin](/image/scout-system/admin.png) |  ![CMS](/image/scout-system/content.png)  |
 
 </div>
-
-> _Note: Add your own screenshots to the `screenshots/` folder to populate the table above._
 
 ---
 
 ## 📊 Project Impact
 
-- 🏛️ **Deployed for a real district-level government/organization unit** — serves as the official digital presence for a Scouting organization
-- 👥 **Supports multi-role teams** — administrators and operators can independently manage their assigned content modules
-- 📰 **Centralizes content operations** — eliminates manual HTML editing by providing a full back-office CMS
-- ⚡ **Automates public communication** — announcements, events, and news are instantly published to the public portal upon admin approval
+- 🏛️ **Deployed for a real district-level government/organization unit** — served as the official digital presence for a Scouting organization
+- 👥 **Supports multi-role teams** — administrators and operators could independently manage their assigned content modules
+- 📰 **Centralizes content operations** — eliminated manual HTML editing by providing a full back-office CMS
+- ⚡ **Automates public communication** — announcements, events, and news were instantly published to the public portal upon admin approval
 - 🗂️ **Consolidates 35+ data entities** — from news and videos to polling, file downloads, banners, and visitor analytics in a single unified system
 - 🔒 **Production-hardened security** — CAPTCHA verification, `password_hash` encryption, session-based auth, and direct-access protection on all PHP files
 
 ---
 
-## 🔒 Source Code
-
-This is a production-grade system used in a real organizational environment.
-
-The full source code is hosted in a **private repository** to protect intellectual property.
-
-However, I'm happy to provide access to:
-
-- 👨‍💻 **Interviewers** — for code review and architecture evaluation
-- 🤝 **Collaborators** — for contributions or further development
-
-Please contact me for access.
-
-[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
-
----
-
-## 📊 Project at a Glance
+## Project at a Glance
 
 | Metric                        | Value                                                                           |
 | ----------------------------- | ------------------------------------------------------------------------------- |
@@ -234,19 +213,13 @@ Please contact me for access.
 <div align="center">
 
 **Achmad Fahmi Al Hafidz**
-_Backend Engineer · PHP · CodeIgniter · MySQL_
+_Backend Engineer · Python · Django · Fullstack Web Developer_
 
-[![GitHub](https://img.shields.io/badge/GitHub-fidzst-181717?style=for-the-badge&logo=github)](https://github.com/fidzst)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-dzachmidz-181717?style=for-the-badge&logo=github)](https://github.com/Dzachmidz)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fidzst)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-4CAF50?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-portfolio.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fidzst.pythonanywhere.com)
 
 </div>
 
 ---
-
-<div align="center">
-
-_Built with dedication for real-world organizational needs._
-
-</div>

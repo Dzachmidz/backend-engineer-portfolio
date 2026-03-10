@@ -2,7 +2,7 @@
 
 # 🚀 Django Professional Portfolio
 
-### _A production-grade, data-driven portfolio management system built with Django._
+### _A production grade, data driven portfolio management system built with Django._
 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Django](https://img.shields.io/badge/Django-4.2-092E20?style=for-the-badge&logo=django&logoColor=white)](https://djangoproject.com)
@@ -17,7 +17,7 @@
 
 ## 🔒 Source Code
 
-This is a real-world production project.  
+This is a real world production project.  
 The source code is kept in a **private repository** to protect intellectual property.
 
 However, I’m happy to provide access to:
@@ -31,7 +31,7 @@ However, I’m happy to provide access to:
 
 ## 📌 Overview
 
-> **Django Portfolio** is not just a static website—it's a **Content Management System (CMS)** designed for developers to showcase their work professionally.
+> **Django Portfolio** is not just a static website it's a **Content Management System (CMS)** designed for developers to showcase their work professionally.
 
 Unlike robust static site generators, this system allows you to manage your **Projects**, **Skills**, **Experience**, and **Profile Information** directly through a secure Admin Panel. No more editing HTML files to add a new project or update your resume.
 
@@ -57,7 +57,7 @@ Built with performance and SEO in mind, it features a responsive design, dark/li
 | Layer              | Technology               | Purpose                               |
 | ------------------ | ------------------------ | ------------------------------------- |
 | **Backend**        | Django 4.2 (Python 3.12) | Core logic, ORM, Admin Interface      |
-| **Database**       | SQLite / MySQL           | Data persistence                      |
+| **Database**       | SQLite           | Data persistence                      |
 | **Frontend**       | Bootstrap 5, Swiper.js   | Responsive UI & Carousel components   |
 | **Storage**        | Django Media Files       | Image & Document handling             |
 | **Infrastructure** | Gunicorn + Nginx         | Production serving (Deployment ready) |
@@ -67,7 +67,7 @@ Built with performance and SEO in mind, it features a responsive design, dark/li
 
 ## 🏗️ Architecture
 
-The project follows the standard **Django M_T (Model-View-Template)** architecture:
+The project follows the standard **Django M_T (Model View Template)** architecture:
 
 ```
 ┌────────────────────────┐
@@ -123,13 +123,11 @@ The project follows the standard **Django M_T (Model-View-Template)** architectu
 |                                   |                                       |
 | :-------------------------------: | :-----------------------------------: |
 |      **Hero Section (Dark)**      |         **Featured Projects**         |
-|   ![Hero](screenshots/hero.png)   | ![Featured](screenshots/featured.png) |
-|      **Skills & Tech Stack**      |          **Admin Dashboard**          |
-| ![Skills](screenshots/skills.png) |    ![Admin](screenshots/admin.png)    |
+|   ![Hero](/image/portfolio/hero.png)   | ![Featured](/image/portfolio/featured.png) |
+|      **Skills & Tech Stack**      |          **Experience**          |
+| ![Skills](/image/portfolio/tech.png) |    ![Admin](/image/portfolio/experience.png)    |
 
 </div>
-
-> _Note: Placeholders for screenshots. Run the app to see live._
 
 ---
 
@@ -211,17 +209,14 @@ Visit `http://127.0.0.1:8000` to see the site, or `http://127.0.0.1:8000/admin` 
 <div align="center">
 
 **Achmad Fahmi Al Hafidz**
-_Backend Engineer · Python · Django_
+_Backend Engineer · Python · Django · Fullstack Web_ 
 
-[![GitHub](https://img.shields.io/badge/GitHub-Visit-181717?style=for-the-badge&logo=github)](https://github.com/fidzst)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-dzachmidz-181717?style=for-the-badge&logo=github)](https://github.com/Dzachmidz)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fidzst)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fidzst.pythonanywhere.com)
 
 </div>
 
 ---
 
-<div align="center">
-
-_Built with ❤️ using Django & Python._
-
-</div>

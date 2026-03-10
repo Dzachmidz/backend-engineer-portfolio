@@ -2,13 +2,13 @@
 
 # 📤 Letter Management Information System
 
-### _A production-grade correspondence management system built for real-world organizational operations._
+### _A previously deployed, production grade correspondence management system built for real world organizational operations._
 
 [![PHP](https://img.shields.io/badge/PHP-7.x-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
 [![CodeIgniter](https://img.shields.io/badge/CodeIgniter-3.x-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)](https://codeigniter.com)
 [![MySQL](https://img.shields.io/badge/MySQL-MariaDB-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-3/4-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
-[![Status](https://img.shields.io/badge/Status-Production-success?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-Archived-lightgrey?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)]()
 
 </div>
@@ -17,7 +17,7 @@
 
 ## 🔒 Source Code
 
-This is a real-world production project used in massive regional events.  
+This was a production grade correspondence management system previously deployed in a real world organizational environment.  
 The source code is kept in a **private repository** to protect intellectual property.
 
 However, I’m happy to provide access to:
@@ -31,17 +31,17 @@ However, I’m happy to provide access to:
 
 ## 📌 Overview
 
-> **Letter Management Information System** is a full-featured, production-ready **Correspondence Management System (CMS)** designed for Indonesian government and organizational environments.
+> **Letter Management Information System** is a full featured, production ready **Correspondence Management System (CMS)** designed for Indonesian government and organizational environments.
 
-This system solves the inefficiency of manual letter management by digitalizing the entire correspondence lifecycle — from incoming and outgoing letters to internal office memos and bulk correspondence. It was designed and deployed for use in real organizational workflows, replacing paper-based processes with a centralized, trackable, and auditable digital system.
+This system solved the inefficiency of manual letter management by digitalizing the entire correspondence lifecycle from incoming and outgoing letters to internal office memos and bulk correspondence. It was designed and deployed for use in real organizational workflows, replacing paper based processes with a centralized, trackable, and auditable digital system.
 
-Built on **CodeIgniter 3** with a clean MVC architecture, it features session-based authentication, role-based access control, automated letter numbering, file attachments, and a comprehensive reporting suite.
+Built on **CodeIgniter 3** with a clean MVC architecture, it featured session based authentication, role based access control, automated letter numbering, file attachments, and a comprehensive reporting suite.
 
 ---
 
 ## ✨ Features
 
-- 🔐 **Session-Based Authentication** — Secure login/logout with MD5-hashed passwords, brute-force flash messaging, and email-based password reset
+- 🔐 **Session-Based Authentication** — Secure login/logout with MD5 hashed passwords, brute force flash messaging, and email based password reset
 - 📥 **Incoming Mail (Surat Masuk)** — Record, track, and archive all incoming correspondence with full CRUD and detail views
 - 📤 **Outgoing Mail (Surat Keluar)** — Manage and generate outgoing letters with auto-incremented letter numbers
 - 📋 **Office Memo (Nota Dinas)** — Create and manage internal service notes with automated nota number generation
@@ -170,22 +170,20 @@ The system manages **12+ relational tables** including:
 |                                         |                                     |
 | :-------------------------------------: | :---------------------------------: |
 |          **Dashboard / Home**           |           **Login Page**            |
-| ![Dashboard](screenshots/dashboard.png) |   ![Login](screenshots/login.png)   |
+| ![Dashboard](/image/letter-management/dashboard.png) |   ![Login](/image/letter-management/login.png)   |
 |         **Incoming Mail List**          |       **Outgoing Mail Form**        |
-|   ![SM List](screenshots/sm_list.png)   | ![SK Form](screenshots/sk_form.png) |
+|   ![SM List](/image/letter-management/incoming.png)   | ![SK Form](/image/letter-management/outgoing.png) |
 |               **Report**                |         **User Management**         |
-|   ![Report](screenshots/laporan.png)    |   ![Users](screenshots/users.png)   |
+|   ![Report](/image/letter-management/report.png)    |   ![Profile](/image/letter-management/Picture1.png)   |
 
 </div>
-
-> _Run the application locally to see the live interface._
 
 ---
 
 ## 📈 Project Impact
 
-- 🏛️ **Deployed in an organizational environment** — actively used by staff across multiple departments
-- ⚡ **Eliminates manual letter tracking** — replaces error-prone paper registers with a searchable digital archive
+- 🏛️ **Deployed in an organizational environment** — was actively used by staff across multiple departments
+- ⚡ **Eliminates manual letter tracking** — replaces error prone paper registers with a searchable digital archive
 - 🔢 **Automated document numbering** — reduces administrative overhead and prevents duplicate or incorrect letter numbers
 - 📁 **Structured archiving** — implements the national government archive classification standard, ensuring compliance and auditability
 - 📊 **Reporting at scale** — generates printable correspondence reports on demand, filterable by date range and organizational unit
@@ -193,24 +191,7 @@ The system manages **12+ relational tables** including:
 
 ---
 
-## 🔒 Source Code
-
-This is a production-grade system used in real organizational environments.
-
-The full source code is hosted in a **private repository** to protect intellectual property.
-
-However, I'm happy to provide access to:
-
-- 👨‍💻 **Interviewers** – for code review and architecture evaluation
-- 🤝 **Collaborators** – for contributions and improvements
-
-Please contact me for access.
-
-[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
-
----
-
-## 📊 Project at a Glance
+## Project at a Glance
 
 | Metric                            | Value                                |
 | --------------------------------- | ------------------------------------ |
@@ -243,19 +224,14 @@ Please contact me for access.
 <div align="center">
 
 **Achmad Fahmi Al Hafidz**
-_Backend Engineer · PHP · CodeIgniter · Python · Django_
+_Backend Engineer · Python · Django · Fullstack Web Developer_
 
-[![GitHub](https://img.shields.io/badge/GitHub-fidzst-181717?style=for-the-badge&logo=github)](https://github.com/fidzst)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-dzachmidz-181717?style=for-the-badge&logo=github)](https://github.com/Dzachmidz)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fidzst)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fahmialhafidza@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-4A90E2?style=for-the-badge&logo=vercel&logoColor=white)](https://your-portfolio.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fidzst.pythonanywhere.com)
 
 </div>
 
 ---
 
-<div align="center">
-
-_Built with dedication for real-world organizational efficiency — powered by PHP & CodeIgniter._
-
-</div>
