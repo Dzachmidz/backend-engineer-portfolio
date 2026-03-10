@@ -138,7 +138,7 @@ The project follows a **Modular Monolith** architecture — each business domain
 |                     **Gallery**                     |             **Service Detail Page**             |
 | ![Gallery](/image/event-organizer/raihmoment.jpeg)  | ![Service](/image/event-organizer/service.jpeg) |
 |                    **Equipment**                    |                   **Contact**                   |
-| ![Portfolio](/image/event-organizer/equipment.jpeg) |
+| ![Portfolio](/image/event-organizer/equipment.jpeg) | ![Portfolio](/image/event-organizer/contact.jpeg) |
 
 </div>
 
